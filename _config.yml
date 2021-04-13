@@ -61,7 +61,7 @@ author:
   bio    : "Stay Hunger, Stay Foolish."
   links:
     - label: "掘金"
-      icon: "/assets/images/juejin.png"
+      icon: "/assets/images/juejin.jpg"
       url: "https://juejin.im/user/5753b177530fd3006801319a/posts"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

@@ -13,3 +13,4 @@ This theme supports **link posts**, made famous by John Gruber. To use, just add
 > And this is how a quote looks.
 
 Some [link](#) can also be shown.
+
