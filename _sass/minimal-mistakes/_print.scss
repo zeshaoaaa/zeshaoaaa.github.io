@@ -25,7 +25,7 @@
     margin: 0 auto;
     background: #fff !important;
     color: #000 !important;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.5;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -145,6 +145,7 @@
   a {
     orphans: 3;
     widows: 3;
+    font-size: 0.8em;
   }
 
   h1,
