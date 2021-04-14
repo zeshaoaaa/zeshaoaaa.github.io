@@ -26,6 +26,15 @@ search: true
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
