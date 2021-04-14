@@ -28,20 +28,3 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 .ais-search-box .ais-search-box--input {
   background-color: $form-background-color;
 }
-
-
-html {
-  font-size: 14px; // change to whatever
-
-  @include breakpoint($medium) {
-    font-size: 16px; // change to whatever
-  }
-
-  @include breakpoint($large) {
-    font-size: 18px; // change to whatever
-  }
-
-  @include breakpoint($x-large) {
-    font-size: 20px; // change to whatever
-  }
-}
