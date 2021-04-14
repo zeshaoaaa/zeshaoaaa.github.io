@@ -38,19 +38,3 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
-
-html {
-  font-size: 14px; // change to whatever
-
-  @include breakpoint($medium) {
-    font-size: 16px; // change to whatever
-  }
-
-  @include breakpoint($large) {
-    font-size: 18px; // change to whatever
-  }
-
-  @include breakpoint($x-large) {
-    font-size: 20px; // change to whatever
-  }
-}
