@@ -512,10 +512,10 @@
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
 
-  display: block;
-  position: fixed; /* changed from absolute */
-  top: 5em;
-  right: 5.5em;
+  // display: block;
+  // position: fixed; /* changed from absolute */
+  // top: 5em;
+  // right: 5.5em;
 
   .nav__title {
     color: #fff;
