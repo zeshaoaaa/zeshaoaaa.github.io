@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">RecyclerView的四级缓存结构</text>
+  
+  <!-- RecyclerView容器 -->
+  <rect x="100" y="100" width="600" height="450" fill="#e9ecef" stroke="#495057" stroke-width="2" rx="8" ry="8"/>
+  <text x="400" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">RecyclerView.Recycler</text>
+  
+  <!-- 第一级缓存：mAttachedScrap和mChangedScrap -->
+  <rect x="150" y="160" width="500" height="80" fill="#ffe8cc" stroke="#ff9500" stroke-width="2" rx="6" ry="6"/>
+  <text x="400" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">第一级缓存: mAttachedScrap/mChangedScrap</text>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">临时缓存屏幕上可见的ViewHolder，无需重新绑定</text>
+  
+  <!-- 第二级缓存：mCachedViews -->
+  <rect x="150" y="260" width="500" height="80" fill="#ccf2ff" stroke="#0085ff" stroke-width="2" rx="6" ry="6"/>
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">第二级缓存: mCachedViews</text>
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">存储最近滚出屏幕的ViewHolder (默认大小为2)，无需重新绑定</text>
+  
+  <!-- 第三级缓存：mViewCacheExtension -->
+  <rect x="150" y="360" width="500" height="80" fill="#ccffd8" stroke="#00cc66" stroke-width="2" rx="6" ry="6"/>
+  <text x="400" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">第三级缓存: mViewCacheExtension</text>
+  <text x="400" y="420" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">开发者自定义缓存，默认为null</text>
+  
+  <!-- 第四级缓存：mRecyclerPool -->
+  <rect x="150" y="460" width="500" height="80" fill="#e6ccff" stroke="#9933ff" stroke-width="2" rx="6" ry="6"/>
+  <text x="400" y="490" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">第四级缓存: mRecyclerPool</text>
+  <text x="400" y="520" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">按viewType分组缓存ViewHolder (每组默认5个)，需要重新绑定数据</text>
+  
+  <!-- 箭头和流程 -->
+  <path d="M 420 240 L 420 260" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 420 340 L 420 360" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 420 440 L 420 460" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- 创建新ViewHolder箭头 -->
+  <text x="560" y="560" font-family="Arial, sans-serif" font-size="14" font-style="italic" fill="#555">如果缓存中都没有找到，创建新的ViewHolder</text>
+  
+  <!-- 箭头标记定义 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555"/>
+    </marker>
+  </defs>
+</svg> 

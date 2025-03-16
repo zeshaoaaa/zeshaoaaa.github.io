@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="950" height="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#0004" />
+        </filter>
+        <linearGradient id="recyclerViewGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#E8F5E9" />
+            <stop offset="100%" style="stop-color:#C8E6C9" />
+        </linearGradient>
+        <linearGradient id="scrappedGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#E3F2FD" />
+            <stop offset="100%" style="stop-color:#BBDEFB" />
+        </linearGradient>
+        <linearGradient id="reattachedGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFF9C4" />
+            <stop offset="100%" style="stop-color:#FFF59D" />
+        </linearGradient>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+        </marker>
+    </defs>
+    
+    <!-- 标题 -->
+    <text x="475" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#333">
+        Scrap缓存概念示意图
+    </text>
+    
+    <!-- 第一阶段：原始RecyclerView -->
+    <g transform="translate(50, 100)">
+        <rect x="0" y="0" width="200" height="220" rx="10" ry="10" fill="url(#recyclerViewGradient)" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)" />
+        <text x="100" y="-20" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+            布局前的RecyclerView
+        </text>
+        
+        <!-- ViewHolder示例 -->
+        <rect x="20" y="20" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#4CAF50" stroke-width="1" />
+        <text x="100" y="45" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 1</text>
+        
+        <rect x="20" y="70" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#4CAF50" stroke-width="1" />
+        <text x="100" y="95" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 2</text>
+        
+        <rect x="20" y="120" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#4CAF50" stroke-width="1" />
+        <text x="100" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 3</text>
+        
+        <rect x="20" y="170" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#4CAF50" stroke-width="1" />
+        <text x="100" y="195" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 4</text>
+    </g>
+    
+    <!-- 箭头到Scrap缓存 -->
+    <g>
+        <path d="M 260,170 L 300,170 Q 310,170 310,180 L 310,190 Q 310,200 320,200 L 360,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+        <text x="310" y="160" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">临时分离</text>
+    </g>
+    
+    <!-- 第二阶段：Scrap缓存 -->
+    <g transform="translate(360, 100)">
+        <rect x="0" y="0" width="220" height="220" rx="10" ry="10" fill="url(#scrappedGradient)" stroke="#2196F3" stroke-width="2" filter="url(#shadow)" />
+        <text x="110" y="-20" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+            Scrap缓存
+        </text>
+        <text x="110" y="-40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">
+            (临时存储，保留完整状态)
+        </text>
+        
+        <!-- ViewHolder示例 - 略微错开表示它们处于临时状态 -->
+        <g transform="rotate(3)">
+            <rect x="20" y="15" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#2196F3" stroke-width="1" stroke-dasharray="3,1" />
+            <text x="100" y="40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 1</text>
+        </g>
+        
+        <g transform="rotate(-2)">
+            <rect x="30" y="65" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#2196F3" stroke-width="1" stroke-dasharray="3,1" />
+            <text x="110" y="90" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 2</text>
+        </g>
+        
+        <g transform="rotate(2)">
+            <rect x="25" y="115" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#2196F3" stroke-width="1" stroke-dasharray="3,1" />
+            <text x="105" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 3</text>
+        </g>
+        
+        <g transform="rotate(-3)">
+            <rect x="35" y="165" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#2196F3" stroke-width="1" stroke-dasharray="3,1" />
+            <text x="115" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 4</text>
+        </g>
+    </g>
+    
+    <!-- 箭头到最终布局 -->
+    <g>
+        <path d="M 580,170 L 620,170 Q 630,170 630,180 L 630,190 Q 630,200 640,200 L 680,200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+        <text x="630" y="160" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">重新附加</text>
+    </g>
+    
+    <!-- 第三阶段：最终布局 -->
+    <g transform="translate(680, 100)">
+        <rect x="0" y="0" width="200" height="220" rx="10" ry="10" fill="url(#reattachedGradient)" stroke="#FFC107" stroke-width="2" filter="url(#shadow)" />
+        <text x="100" y="-20" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+            布局后的RecyclerView
+        </text>
+        
+        <!-- 注意物品顺序可能会变化，表示布局改变 -->
+        <rect x="20" y="20" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#FFC107" stroke-width="1" />
+        <text x="100" y="45" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 3</text>
+        
+        <rect x="20" y="70" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#FFC107" stroke-width="1" />
+        <text x="100" y="95" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 1</text>
+        
+        <rect x="20" y="120" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#FFC107" stroke-width="1" />
+        <text x="100" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 4</text>
+        
+        <rect x="20" y="170" width="160" height="40" rx="5" ry="5" fill="#FFF" stroke="#FFC107" stroke-width="1" />
+        <text x="100" y="195" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">Item 2</text>
+    </g>
+    
+    <!-- 底部说明 -->
+    <g transform="translate(475, 390)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+            Scrap缓存的特点：短暂存在，原样保存ViewHolder状态，无需重新绑定数据，用于高效布局重排
+        </text>
+    </g>
+</svg> 

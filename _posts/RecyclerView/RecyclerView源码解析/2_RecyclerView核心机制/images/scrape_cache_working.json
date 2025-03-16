@@ -1,0 +1,2243 @@
+{
+  "id": "1:1",
+  "name": "mAttachedScrap和mChangedScrap工作原理",
+  "type": "FRAME",
+  "x": 0,
+  "y": 0,
+  "width": 800,
+  "height": 650,
+  "relativeTransform": [
+    [1, 0, 0],
+    [0, 1, 0]
+  ],
+  "constraints": {
+    "horizontal": "MIN",
+    "vertical": "MIN"
+  },
+  "fills": [
+    {
+      "type": "SOLID",
+      "visible": true,
+      "opacity": 1,
+      "blendMode": "NORMAL",
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      }
+    }
+  ],
+  "strokes": [],
+  "strokeWeight": 1,
+  "cornerRadius": 0,
+  "effects": [],
+  "blendMode": "PASS_THROUGH",
+  "layoutAlign": "INHERIT",
+  "layoutGrow": 0,
+  "layoutMode": "NONE",
+  "itemSpacing": 0,
+  "children": [
+    {
+      "id": "1:2",
+      "name": "标题",
+      "type": "TEXT",
+      "x": 400,
+      "y": 35,
+      "width": 350,
+      "height": 30,
+      "relativeTransform": [
+        [1, 0, 400],
+        [0, 1, 35]
+      ],
+      "constraints": {
+        "horizontal": "CENTER",
+        "vertical": "MIN"
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "CENTER",
+      "characters": "mAttachedScrap和mChangedScrap工作原理",
+      "fontSize": 22,
+      "fontWeight": 700,
+      "fontFamily": "Arial",
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER"
+    },
+    {
+      "id": "1:3",
+      "name": "预布局阶段_Group",
+      "type": "GROUP",
+      "x": 130,
+      "y": 130,
+      "width": 160,
+      "height": 280,
+      "relativeTransform": [
+        [1, 0, 130],
+        [0, 1, 130]
+      ],
+      "children": [
+        {
+          "id": "1:4",
+          "name": "手机框架",
+          "type": "RECTANGLE",
+          "x": 130,
+          "y": 130,
+          "width": 160,
+          "height": 280,
+          "relativeTransform": [
+            [1, 0, 130],
+            [0, 1, 130]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9411764740943909,
+                "g": 0.9411764740943909,
+                "b": 0.9411764740943909
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 2,
+          "cornerRadius": 15
+        },
+        {
+          "id": "1:5",
+          "name": "预布局阶段",
+          "type": "TEXT",
+          "x": 210,
+          "y": 115,
+          "width": 80,
+          "height": 20,
+          "relativeTransform": [
+            [1, 0, 210],
+            [0, 1, 115]
+          ],
+          "characters": "预布局阶段",
+          "fontSize": 14,
+          "fontWeight": 700,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:6",
+          "name": "RecyclerView",
+          "type": "RECTANGLE",
+          "x": 140,
+          "y": 155,
+          "width": 140,
+          "height": 230,
+          "relativeTransform": [
+            [1, 0, 140],
+            [0, 1, 155]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8980392217636108,
+                "g": 0.9607843160629272,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.20392157137393951,
+                "g": 0.5960784554481506,
+                "b": 0.8588235378265381
+              }
+            }
+          ],
+          "strokeWeight": 1.5
+        },
+        {
+          "id": "1:7",
+          "name": "RecyclerView_Text",
+          "type": "TEXT",
+          "x": 210,
+          "y": 145,
+          "width": 70,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 210],
+            [0, 1, 145]
+          ],
+          "characters": "RecyclerView",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:8",
+          "name": "Item1",
+          "type": "RECTANGLE",
+          "x": 150,
+          "y": 175,
+          "width": 120,
+          "height": 35,
+          "relativeTransform": [
+            [1, 0, 150],
+            [0, 1, 175]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:9",
+          "name": "Item1_Text",
+          "type": "TEXT",
+          "x": 210,
+          "y": 195,
+          "width": 40,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 210],
+            [0, 1, 195]
+          ],
+          "characters": "Item 1",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:10",
+          "name": "Item2",
+          "type": "RECTANGLE",
+          "x": 150,
+          "y": 220,
+          "width": 120,
+          "height": 35,
+          "relativeTransform": [
+            [1, 0, 150],
+            [0, 1, 220]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:11",
+          "name": "Item2_Text",
+          "type": "TEXT",
+          "x": 210,
+          "y": 240,
+          "width": 40,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 210],
+            [0, 1, 240]
+          ],
+          "characters": "Item 2",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:12",
+          "name": "Item3_Changed",
+          "type": "RECTANGLE",
+          "x": 150,
+          "y": 265,
+          "width": 120,
+          "height": 35,
+          "relativeTransform": [
+            [1, 0, 150],
+            [0, 1, 265]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 0.8784313797950745,
+                "b": 0.8784313797950745
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8274509906768799,
+                "g": 0.3294117748737335,
+                "b": 0
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:13",
+          "name": "Item3_Text",
+          "type": "TEXT",
+          "x": 210,
+          "y": 285,
+          "width": 80,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 210],
+            [0, 1, 285]
+          ],
+          "characters": "Item 3 (已改变)",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:14",
+          "name": "Item4",
+          "type": "RECTANGLE",
+          "x": 150,
+          "y": 310,
+          "width": 120,
+          "height": 35,
+          "relativeTransform": [
+            [1, 0, 150],
+            [0, 1, 310]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:15",
+          "name": "Item4_Text",
+          "type": "TEXT",
+          "x": 210,
+          "y": 330,
+          "width": 40,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 210],
+            [0, 1, 330]
+          ],
+          "characters": "Item 4",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1:16",
+      "name": "过渡阶段_Group",
+      "type": "GROUP",
+      "x": 370,
+      "y": 130,
+      "width": 160,
+      "height": 280,
+      "relativeTransform": [
+        [1, 0, 370],
+        [0, 1, 130]
+      ],
+      "children": [
+        {
+          "id": "1:17",
+          "name": "手机框架",
+          "type": "RECTANGLE",
+          "x": 370,
+          "y": 130,
+          "width": 160,
+          "height": 280,
+          "relativeTransform": [
+            [1, 0, 370],
+            [0, 1, 130]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9411764740943909,
+                "g": 0.9411764740943909,
+                "b": 0.9411764740943909
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 2,
+          "cornerRadius": 15
+        },
+        {
+          "id": "1:18",
+          "name": "过渡阶段",
+          "type": "TEXT",
+          "x": 450,
+          "y": 115,
+          "width": 80,
+          "height": 20,
+          "relativeTransform": [
+            [1, 0, 450],
+            [0, 1, 115]
+          ],
+          "characters": "过渡阶段",
+          "fontSize": 14,
+          "fontWeight": 700,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:19",
+          "name": "RecyclerView",
+          "type": "RECTANGLE",
+          "x": 380,
+          "y": 155,
+          "width": 140,
+          "height": 230,
+          "relativeTransform": [
+            [1, 0, 380],
+            [0, 1, 155]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8980392217636108,
+                "g": 0.9607843160629272,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.20392157137393951,
+                "g": 0.5960784554481506,
+                "b": 0.8588235378265381
+              }
+            }
+          ],
+          "strokeWeight": 1.5
+        },
+        {
+          "id": "1:20",
+          "name": "RecyclerView_Text",
+          "type": "TEXT",
+          "x": 450,
+          "y": 145,
+          "width": 70,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 450],
+            [0, 1, 145]
+          ],
+          "characters": "RecyclerView",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:21",
+          "name": "临时detach",
+          "type": "TEXT",
+          "x": 450,
+          "y": 260,
+          "width": 65,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 450],
+            [0, 1, 260]
+          ],
+          "characters": "临时detach",
+          "fontSize": 12,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:22",
+          "name": "所有Items",
+          "type": "TEXT",
+          "x": 450,
+          "y": 280,
+          "width": 60,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 450],
+            [0, 1, 280]
+          ],
+          "characters": "所有Items",
+          "fontSize": 12,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1:23",
+      "name": "后布局阶段_Group",
+      "type": "GROUP",
+      "x": 610,
+      "y": 130,
+      "width": 160,
+      "height": 280,
+      "relativeTransform": [
+        [1, 0, 610],
+        [0, 1, 130]
+      ],
+      "children": [
+        {
+          "id": "1:24",
+          "name": "手机框架",
+          "type": "RECTANGLE",
+          "x": 610,
+          "y": 130,
+          "width": 160,
+          "height": 280,
+          "relativeTransform": [
+            [1, 0, 610],
+            [0, 1, 130]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9411764740943909,
+                "g": 0.9411764740943909,
+                "b": 0.9411764740943909
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 2,
+          "cornerRadius": 15
+        },
+        {
+          "id": "1:25",
+          "name": "后布局阶段",
+          "type": "TEXT",
+          "x": 690,
+          "y": 115,
+          "width": 80,
+          "height": 20,
+          "relativeTransform": [
+            [1, 0, 690],
+            [0, 1, 115]
+          ],
+          "characters": "后布局阶段",
+          "fontSize": 14,
+          "fontWeight": 700,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:26",
+          "name": "RecyclerView",
+          "type": "RECTANGLE",
+          "x": 620,
+          "y": 155,
+          "width": 140,
+          "height": 230,
+          "relativeTransform": [
+            [1, 0, 620],
+            [0, 1, 155]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8980392217636108,
+                "g": 0.9607843160629272,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.20392157137393951,
+                "g": 0.5960784554481506,
+                "b": 0.8588235378265381
+              }
+            }
+          ],
+          "strokeWeight": 1.5
+        },
+        {
+          "id": "1:27",
+          "name": "RecyclerView_Text",
+          "type": "TEXT",
+          "x": 690,
+          "y": 145,
+          "width": 70,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 690],
+            [0, 1, 145]
+          ],
+          "characters": "RecyclerView",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:28",
+          "name": "Item1",
+          "type": "RECTANGLE",
+          "x": 630,
+          "y": 175,
+          "width": 120,
+          "height": 35,
+          "relativeTransform": [
+            [1, 0, 630],
+            [0, 1, 175]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:29",
+          "name": "Item1_Text",
+          "type": "TEXT",
+          "x": 690,
+          "y": 195,
+          "width": 40,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 690],
+            [0, 1, 195]
+          ],
+          "characters": "Item 1",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:30",
+          "name": "Item2",
+          "type": "RECTANGLE",
+          "x": 630,
+          "y": 220,
+          "width": 120,
+          "height": 35,
+          "relativeTransform": [
+            [1, 0, 630],
+            [0, 1, 220]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:31",
+          "name": "Item2_Text",
+          "type": "TEXT",
+          "x": 690,
+          "y": 240,
+          "width": 40,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 690],
+            [0, 1, 240]
+          ],
+          "characters": "Item 2",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:32",
+          "name": "Item4",
+          "type": "RECTANGLE",
+          "x": 630,
+          "y": 265,
+          "width": 120,
+          "height": 35,
+          "relativeTransform": [
+            [1, 0, 630],
+            [0, 1, 265]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:33",
+          "name": "Item4_Text",
+          "type": "TEXT",
+          "x": 690,
+          "y": 285,
+          "width": 40,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 690],
+            [0, 1, 285]
+          ],
+          "characters": "Item 4",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:34",
+          "name": "Item3已移除",
+          "type": "TEXT",
+          "x": 690,
+          "y": 325,
+          "width": 70,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 690],
+            [0, 1, 325]
+          ],
+          "characters": "Item 3已移除",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1:35",
+      "name": "mAttachedScrap_Group",
+      "type": "GROUP",
+      "x": 220,
+      "y": 440,
+      "width": 150,
+      "height": 120,
+      "relativeTransform": [
+        [1, 0, 220],
+        [0, 1, 440]
+      ],
+      "children": [
+        {
+          "id": "1:36",
+          "name": "mAttachedScrap",
+          "type": "RECTANGLE",
+          "x": 220,
+          "y": 440,
+          "width": 150,
+          "height": 120,
+          "relativeTransform": [
+            [1, 0, 220],
+            [0, 1, 440]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.9019607901573181,
+                "g": 0.9490196108818054,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.20392157137393951,
+                "g": 0.5960784554481506,
+                "b": 0.8588235378265381
+              }
+            }
+          ],
+          "strokeWeight": 1.5
+        },
+        {
+          "id": "1:37",
+          "name": "mAttachedScrap_Title",
+          "type": "TEXT",
+          "x": 295,
+          "y": 430,
+          "width": 100,
+          "height": 20,
+          "relativeTransform": [
+            [1, 0, 295],
+            [0, 1, 430]
+          ],
+          "characters": "mAttachedScrap",
+          "fontSize": 14,
+          "fontWeight": 700,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:38",
+          "name": "Item1",
+          "type": "RECTANGLE",
+          "x": 230,
+          "y": 455,
+          "width": 130,
+          "height": 25,
+          "relativeTransform": [
+            [1, 0, 230],
+            [0, 1, 455]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:39",
+          "name": "Item1_Text",
+          "type": "TEXT",
+          "x": 295,
+          "y": 470,
+          "width": 40,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 295],
+            [0, 1, 470]
+          ],
+          "characters": "Item 1",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+                  },
+        {
+          "id": "1:40",
+          "name": "Item2",
+          "type": "RECTANGLE",
+          "x": 230,
+          "y": 490,
+          "width": 130,
+          "height": 25,
+          "relativeTransform": [
+            [1, 0, 230],
+            [0, 1, 490]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:41",
+          "name": "Item2_Text",
+          "type": "TEXT",
+          "x": 295,
+          "y": 505,
+          "width": 40,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 295],
+            [0, 1, 505]
+          ],
+          "characters": "Item 2",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:42",
+          "name": "Item4",
+          "type": "RECTANGLE",
+          "x": 230,
+          "y": 525,
+          "width": 130,
+          "height": 25,
+          "relativeTransform": [
+            [1, 0, 230],
+            [0, 1, 525]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.3333333432674408,
+                "g": 0.3333333432674408,
+                "b": 0.3333333432674408
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:43",
+          "name": "Item4_Text",
+          "type": "TEXT",
+          "x": 295,
+          "y": 540,
+          "width": 40,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 295],
+            [0, 1, 540]
+          ],
+          "characters": "Item 4",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1:44",
+      "name": "mChangedScrap_Group",
+      "type": "GROUP",
+      "x": 430,
+      "y": 440,
+      "width": 150,
+      "height": 100,
+      "relativeTransform": [
+        [1, 0, 430],
+        [0, 1, 440]
+      ],
+      "children": [
+        {
+          "id": "1:45",
+          "name": "mChangedScrap",
+          "type": "RECTANGLE",
+          "x": 430,
+          "y": 440,
+          "width": 150,
+          "height": 100,
+          "relativeTransform": [
+            [1, 0, 430],
+            [0, 1, 440]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 0.9411764740943909,
+                "b": 0.8980392217636108
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8274509906768799,
+                "g": 0.3294117748737335,
+                "b": 0
+              }
+            }
+          ],
+          "strokeWeight": 1.5
+        },
+        {
+          "id": "1:46",
+          "name": "mChangedScrap_Title",
+          "type": "TEXT",
+          "x": 505,
+          "y": 430,
+          "width": 100,
+          "height": 20,
+          "relativeTransform": [
+            [1, 0, 505],
+            [0, 1, 430]
+          ],
+          "characters": "mChangedScrap",
+          "fontSize": 14,
+          "fontWeight": 700,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:47",
+          "name": "Item3_Changed",
+          "type": "RECTANGLE",
+          "x": 440,
+          "y": 470,
+          "width": 130,
+          "height": 25,
+          "relativeTransform": [
+            [1, 0, 440],
+            [0, 1, 470]
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 1,
+                "g": 0.8784313797950745,
+                "b": 0.8784313797950745
+              }
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0.8274509906768799,
+                "g": 0.3294117748737335,
+                "b": 0
+              }
+            }
+          ],
+          "strokeWeight": 1
+        },
+        {
+          "id": "1:48",
+          "name": "Item3_Text",
+          "type": "TEXT",
+          "x": 505,
+          "y": 485,
+          "width": 80,
+          "height": 12,
+          "relativeTransform": [
+            [1, 0, 505],
+            [0, 1, 485]
+          ],
+          "characters": "Item 3 (已改变)",
+          "fontSize": 10,
+          "fontFamily": "Arial",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER",
+          "fills": [
+            {
+              "type": "SOLID",
+              "visible": true,
+              "opacity": 1,
+              "blendMode": "NORMAL",
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1:49",
+      "name": "箭头_从预布局到mAttachedScrap_1",
+      "type": "VECTOR",
+      "x": 190,
+      "y": 195,
+      "width": 95,
+      "height": 267,
+      "relativeTransform": [
+        [1, 0, 190],
+        [0, 1, 195]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 C30,55 60,155 95,267",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:50",
+      "name": "箭头_从预布局到mAttachedScrap_2",
+      "type": "VECTOR",
+      "x": 190,
+      "y": 240,
+      "width": 95,
+      "height": 257,
+      "relativeTransform": [
+        [1, 0, 190],
+        [0, 1, 240]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 C30,40 60,140 95,257",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:51",
+      "name": "箭头_从预布局到mAttachedScrap_3",
+      "type": "VECTOR",
+      "x": 190,
+      "y": 330,
+      "width": 95,
+      "height": 202,
+      "relativeTransform": [
+        [1, 0, 190],
+        [0, 1, 330]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 C30,20 60,70 95,202",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:52",
+      "name": "存入未变化视图",
+      "type": "TEXT",
+      "x": 260,
+      "y": 350,
+      "width": 80,
+      "height": 12,
+      "relativeTransform": [
+        [1, 0, 260],
+        [0, 1, 350]
+      ],
+      "characters": "存入未变化视图",
+      "fontSize": 10,
+      "fontFamily": "Arial",
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "1:53",
+      "name": "箭头_从预布局到mChangedScrap",
+      "type": "VECTOR",
+      "x": 190,
+      "y": 285,
+      "width": 305,
+      "height": 192,
+      "relativeTransform": [
+        [1, 0, 190],
+        [0, 1, 285]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 C60,35 160,115 305,192",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:54",
+      "name": "存入已改变视图",
+      "type": "TEXT",
+      "x": 320,
+      "y": 330,
+      "width": 80,
+      "height": 12,
+      "relativeTransform": [
+        [1, 0, 320],
+        [0, 1, 330]
+      ],
+      "characters": "存入已改变视图",
+      "fontSize": 10,
+      "fontFamily": "Arial",
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "1:55",
+      "name": "箭头_从mAttachedScrap到后布局_1",
+      "type": "VECTOR",
+      "x": 285,
+      "y": 462,
+      "width": 345,
+      "height": 397,
+      "relativeTransform": [
+        [1, 0, 285],
+        [0, 1, 462]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 C115,-62 215,-162 345,-397",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:56",
+      "name": "箭头_从mAttachedScrap到后布局_2",
+      "type": "VECTOR",
+      "x": 285,
+      "y": 497,
+      "width": 345,
+      "height": 387,
+      "relativeTransform": [
+        [1, 0, 285],
+        [0, 1, 497]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 C115,-77 215,-167 345,-387",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:57",
+      "name": "箭头_从mAttachedScrap到后布局_3",
+      "type": "VECTOR",
+      "x": 285,
+      "y": 532,
+      "width": 345,
+      "height": 377,
+      "relativeTransform": [
+        [1, 0, 285],
+        [0, 1, 532]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 C115,-82 215,-182 345,-377",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:58",
+      "name": "复用未变化视图",
+      "type": "TEXT",
+      "x": 400,
+      "y": 350,
+      "width": 80,
+      "height": 12,
+      "relativeTransform": [
+        [1, 0, 400],
+        [0, 1, 350]
+      ],
+      "characters": "复用未变化视图",
+      "fontSize": 10,
+      "fontFamily": "Arial",
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "1:59",
+      "name": "箭头_从mChangedScrap到后布局",
+      "type": "VECTOR",
+      "x": 495,
+      "y": 477,
+      "width": 135,
+      "height": 282,
+      "relativeTransform": [
+        [1, 0, 495],
+        [0, 1, 477]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 C35,-77 95,-177 135,-282",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:60",
+      "name": "复用已改变视图",
+      "type": "TEXT",
+      "x": 560,
+      "y": 350,
+      "width": 80,
+      "height": 12,
+      "relativeTransform": [
+        [1, 0, 560],
+        [0, 1, 350]
+      ],
+      "characters": "复用已改变视图",
+      "fontSize": 10,
+      "fontFamily": "Arial",
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "1:61",
+      "name": "箭头_从预布局到过渡阶段",
+      "type": "VECTOR",
+      "x": 290,
+      "y": 180,
+      "width": 80,
+      "height": 0,
+      "relativeTransform": [
+        [1, 0, 290],
+        [0, 1, 180]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 L80,0",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:62",
+      "name": "临时分离",
+      "type": "TEXT",
+      "x": 330,
+      "y": 165,
+      "width": 50,
+      "height": 12,
+      "relativeTransform": [
+        [1, 0, 330],
+        [0, 1, 165]
+      ],
+      "characters": "临时分离",
+      "fontSize": 10,
+      "fontFamily": "Arial",
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "1:63",
+      "name": "箭头_从过渡阶段到后布局",
+      "type": "VECTOR",
+      "x": 530,
+      "y": 180,
+      "width": 80,
+      "height": 0,
+      "relativeTransform": [
+        [1, 0, 530],
+        [0, 1, 180]
+      ],
+      "fills": [],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.20000000298023224,
+            "g": 0.20000000298023224,
+            "b": 0.20000000298023224
+          }
+        }
+      ],
+      "strokeWeight": 1.5,
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "strokeGeometry": [
+        {
+          "path": "M0,0 L80,0",
+          "windingRule": "NONZERO"
+        }
+      ],
+      "strokeMiterLimit": 4,
+      "cornerRadius": 0,
+      "effects": []
+    },
+    {
+      "id": "1:64",
+      "name": "重新布局",
+      "type": "TEXT",
+      "x": 570,
+      "y": 165,
+      "width": 50,
+      "height": 12,
+      "relativeTransform": [
+        [1, 0, 570],
+        [0, 1, 165]
+      ],
+      "characters": "重新布局",
+      "fontSize": 10,
+      "fontFamily": "Arial",
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "1:65",
+      "name": "说明文本1",
+      "type": "TEXT",
+      "x": 400,
+      "y": 610,
+      "width": 500,
+      "height": 15,
+      "relativeTransform": [
+        [1, 0, 400],
+        [0, 1, 610]
+      ],
+      "characters": "① 布局准备阶段：所有Items临时detach并根据状态分配到对应Scrap缓存",
+      "fontSize": 12,
+      "fontFamily": "Arial",
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "1:66",
+      "name": "说明文本2",
+      "type": "TEXT",
+      "x": 400,
+      "y": 630,
+      "width": 500,
+      "height": 15,
+      "relativeTransform": [
+        [1, 0, 400],
+        [0, 1, 630]
+      ],
+      "characters": "② 布局执行阶段：从Scrap缓存中获取ViewHolder进行复用，完成布局后清空缓存",
+      "fontSize": 12,
+      "fontFamily": "Arial",
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER",
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ]
+    }
+  ]
+}
